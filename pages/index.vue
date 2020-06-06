@@ -6,7 +6,7 @@
         portfolio
       </h1>
       <h2 class="subtitle">
-        My good Nuxt.js project
+        Lauritz Brinkmann Portfolio
       </h2>
       <div class="links">
         <a
@@ -32,6 +32,11 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
   components: {
     Logo
   }
