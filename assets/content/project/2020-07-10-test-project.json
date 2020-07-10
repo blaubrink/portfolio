@@ -1,0 +1,21 @@
+{
+  "title": "Test Project",
+  "cover-image": "/img/button-gameover.png",
+  "images": [
+    "/img/button-gameover.png",
+    "/img/button-start.png"
+  ],
+  "body": "Lorem ipsum dolor sit amet.",
+  "profile": {
+    "development-period": "2019",
+    "technologies": "Unity"
+  },
+  "tags": [
+    "Unity",
+    "Games"
+  ],
+  "cta": {
+    "cta-url": "cta url",
+    "cta-text": "cta text"
+  }
+}
