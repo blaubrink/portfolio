@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  use_large_media_transforms_in_media_library: false
 
 media_folder: static/img
 public_folder: /img
@@ -23,7 +24,7 @@ collections:
 
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Cover Image', name: 'cover-image', widget: 'image', allow_multiple: false }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', allow_multiple: false }
       - { label: 'Images', name: 'images', widget: 'list', field: { label: 'Image', name: 'image', widget: 'image' }}
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -39,8 +40,8 @@ collections:
         name: 'cta'
         widget: 'object'
         fields:
-          - { label: 'CTA URL', name: 'cta-url', widget: 'string' }
-          - { label: 'CTA Text', name: 'cta-text', widget: 'string' }
+          - { label: 'CTA URL', name: 'cta-url', widget: 'string', required: false }
+          - { label: 'CTA Text', name: 'cta-text', widget: 'string', required: false }
         required: false
 
       - label: 'Tags'
@@ -60,7 +61,7 @@ collections:
 
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Cover Image', name: 'cover-image', widget: 'image', allow_multiple: false }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', allow_multiple: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

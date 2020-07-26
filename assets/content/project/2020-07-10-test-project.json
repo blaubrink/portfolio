@@ -1,6 +1,6 @@
 {
   "title": "Test Project",
-  "cover-image": "/img/button-gameover.png",
+  "thumbnail": "/img/button-gameover.png",
   "images": [
     "/img/button-gameover.png",
     "/img/button-start.png"

@@ -1,33 +1,31 @@
 <template>
-  <div class="blog-page">
-    <BlogPreview 
-      v-for="post in blogPosts"
+  <div class="project-page">
+    <ProjectPreview 
+      v-for="post in projectPosts"
       :key="post.slug"
       :id="post.slug"
       :title="post.title"
-      :date="post.date"
-      :description="post.description"
       :thumbnail="post.thumbnail" />
   </div>
 </template>
 
 <script>
-import BlogPreview from "~/components/BlogPreview"
+import ProjectPreview from "~/components/ProjectPreview"
 
 export default {
   components: {
-    BlogPreview
+    ProjectPreview
   },
   computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts
+    projectPosts() {
+      return this.$store.state.projectPosts
     }
   }
 }
 </script>
 
 <style scoped>
-.blog-page {
+.project-page {
   display: flex;
   flex-direction: column;
   align-items: center;
