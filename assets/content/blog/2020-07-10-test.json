@@ -1,0 +1,11 @@
+{
+  "date": "2020-07-10T14:33:16.825Z",
+  "title": "Test",
+  "thumbnail": "/img/button-start.png",
+  "description": "This is a test blog post.",
+  "body": "Lorem ipsum dolor sit amet.",
+  "tags": [
+    "Web",
+    "Design"
+  ]
+}
