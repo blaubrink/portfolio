@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/babylon-canvas.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -38,6 +39,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    
   ],
   /*
   ** Build configuration
@@ -47,6 +49,8 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+
+    transpile: ['babylon-canvas']
   }
 }
